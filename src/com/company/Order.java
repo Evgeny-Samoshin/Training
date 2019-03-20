@@ -20,13 +20,12 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "orderID=" + orderID +
-                ", product=" + product.getProductName() +" "+ product.getPrice() +
-                ", customer=" + customer +
-                ", seller=" + seller +
-                ", date=" + date +
-                ", quantityOrderedProducts=" + quantityOrderedProducts +
-                '}';
+        return "Order number: " + orderID +
+                ", \nDate: " + date +
+                ", \nCustomer: " + customer.getCustomerName() +", "+customer.getCustomerAddress()+", "+customer.getCustomerTelephone()+
+                ", \nSeller: " + seller.getSellerName() +", "+seller.getSellerAddress()+", "+seller.getSellerTelephone()+
+                ", \nProduct: "+ product.getProductName() +":; Price: "+ product.getPrice() +
+                "; Quantity: " + quantityOrderedProducts +
+                "; Sum: " + (quantityOrderedProducts*product.getPrice());
     }
 }
