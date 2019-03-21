@@ -1,7 +1,7 @@
-package com.company;
+package com.company.Entities;
 
 public class Seller {
-    private int sellerID;
+
     private String sellerName;
     private String sellerAddress;
     private String sellerTelephone;
@@ -12,14 +12,6 @@ public class Seller {
         this.sellerName = sellerName;
         this.sellerAddress = sellerAddress;
         this.sellerTelephone = sellerTelephone;
-    }
-
-    public int getSellerID() {
-        return sellerID;
-    }
-
-    public void setSellerID(int sellerID) {
-        this.sellerID = sellerID;
     }
 
     public String getSellerName() {
@@ -49,7 +41,6 @@ public class Seller {
     @Override
     public String toString() {
         return "Seller{" +
-                "sellerID=" + sellerID +
                 ", sellerName='" + sellerName + '\'' +
                 ", sellerAddress='" + sellerAddress + '\'' +
                 ", sellerTelephone='" + sellerTelephone + '\'' +

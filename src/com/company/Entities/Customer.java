@@ -1,7 +1,6 @@
-package com.company;
+package com.company.Entities;
 
 public class Customer {
-    private int customerID;
     private String customerName;
     private String customerAddress;
     private String customerTelephone;
@@ -13,14 +12,6 @@ public class Customer {
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.customerTelephone = customerTelephone;
-    }
-
-    public int getCustomerID() {
-        return customerID;
-    }
-
-    public void setCustomerID(int customerID) {
-        this.customerID = customerID;
     }
 
     public String getCustomerName() {
@@ -50,7 +41,6 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "customerID=" + customerID +
                 ", customerName='" + customerName + '\'' +
                 ", customerAddress='" + customerAddress + '\'' +
                 ", customerTelephone='" + customerTelephone + '\'' +

@@ -1,10 +1,8 @@
-package com.company;
+package com.company.Entities;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Order {
-    private int orderID;
     private Product product;
     private Customer customer;
     private Seller seller;
@@ -20,7 +18,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order number: " + orderID +
+        return "Order: " +
                 ", \nDate: " + date +
                 ", \nCustomer: " + customer.getCustomerName() +", "+customer.getCustomerAddress()+", "+customer.getCustomerTelephone()+
                 ", \nSeller: " + seller.getSellerName() +", "+seller.getSellerAddress()+", "+seller.getSellerTelephone()+

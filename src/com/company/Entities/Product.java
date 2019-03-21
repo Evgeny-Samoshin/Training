@@ -1,7 +1,6 @@
-package com.company;
+package com.company.Entities;
 
 public class Product{
-    private int id;
     private String productName;
     private double price;
     private int quantity;
@@ -13,14 +12,6 @@ public class Product{
         this.productName = productName;
         this.price = price;
         this.quantity = quantity;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getProductName() {
@@ -50,7 +41,6 @@ public class Product{
     @Override
     public String toString() {
         return "Product{" +
-                "id=" + id +
                 ", productName='" + productName + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
